@@ -5,7 +5,9 @@ const Header = () => {
                 Task Management
             </div>
             <div className="flex items-center gap-4">
-                <button className="cursor-pointer rounded-md">switch</button>
+                <button className="cursor-pointer rounded-md">
+                    Switch theme
+                </button>
                 <button className=" p-2 cursor-pointer hover:bg-primary/60 rounded-md">
                     Sign in
                 </button>

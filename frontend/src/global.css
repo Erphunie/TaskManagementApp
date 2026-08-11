@@ -5,6 +5,7 @@
     --color-white-1: #f0f4f8;
     --color-white-2: #f7fbfc;
     --color-black-1: #0b222d;
+    --color-gray-1: #5b6c75;
 }
 
 @layer base {
@@ -14,5 +15,13 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+}
+
+@layer components {
+    .highlight-text {
+        background-clip: text;
+        background-image: linear-gradient(to left, #c9305f, #16a2c1);
+        color: transparent;
     }
 }
