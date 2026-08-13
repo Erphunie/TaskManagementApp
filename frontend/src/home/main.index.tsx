@@ -5,7 +5,7 @@ const HomeMainContentComp = () => {
                 Built for you
             </div>
             <h1 className="text-5xl">
-                A task board that stays{" "}
+                A task board that stays
                 <span className="highlight-text font-bold ">
                     out of your way
                 </span>
@@ -19,7 +19,9 @@ const HomeMainContentComp = () => {
                 <button className="bg-primary rounded-xl py-3 px-4">
                     Create your board
                 </button>
-                <button className="border-gray-1 shadow-md px-4 py-3 border rounded-3xl">I already have board</button>
+                <button className="border-gray-1 shadow-md px-4 py-3 border rounded-3xl">
+                    I already have board
+                </button>
             </div>
         </div>
     );
