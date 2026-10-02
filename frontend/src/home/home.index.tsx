@@ -3,7 +3,7 @@ import HomeMainContentComp from "./main.index";
 
 export const HomePage = () => {
     return (
-        <div>
+        <div className="bg-white-2">
             <Header />
             <HomeMainContentComp />
         </div>

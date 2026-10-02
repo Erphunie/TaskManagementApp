@@ -1,18 +1,19 @@
+import { CiLight } from "react-icons/ci";
+
 const Header = () => {
     return (
-        <div className="flex justify-between items-center pt-4 pb-6 container mx-auto text-black-1">
-            <div className="text-primary text-2xl font-bold">
-                Task Management
+        <div className="flex items-center justify-between p-5 container mx-auto">
+            <div className="text-primary text-xl font-bold">
+                <span className="sm:hidden">TM</span>
+                <span className="hidden sm:block">Task Management</span>
             </div>
-            <div className="flex items-center gap-4">
-                <button className="cursor-pointer rounded-md">
-                    Switch theme
-                </button>
-                <button className=" p-2 cursor-pointer hover:bg-primary/60 rounded-md">
-                    Sign in
-                </button>
-                <button className="bg-primary text-white p-2 rounded-md cursor-pointer">
-                    Get started
+            <div className="flex items-center gap-5">
+                <div className="hover:bg-primary/40 duration-300 rounded-lg px-2 py-2 cursor-pointer">
+                    <CiLight size={20} />
+                    {/* <CiDark size={20} /> */}
+                </div>
+                <button className="bg-primary rounded-lg px-3 py-2 text-base cursor-pointer font-semibold hover:bg-primary/80 duration-300">
+                    Get Started
                 </button>
             </div>
         </div>
