@@ -25,3 +25,7 @@
         color: transparent;
     }
 }
+
+@utility container {
+    padding: 0 20px;
+}
