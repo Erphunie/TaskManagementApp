@@ -24,6 +24,15 @@
         background-image: linear-gradient(to left, #c9305f, #16a2c1);
         color: transparent;
     }
+
+    .surface-grid {
+        background-image:
+            linear-gradient(to right, #d6e0e4 1px, transparent 1px),
+            linear-gradient(to bottom, #d6e0e4 1px, transparent 1px);
+        background-size: 56px 56px;
+        -webkit-mask-image: radial-gradient(80% 60% at 50% 0, #000, #0000 75%);
+        mask-image: radial-gradient(80% 60% at 50% 0, #000, #0000 75%);
+    }
 }
 
 @utility container {
