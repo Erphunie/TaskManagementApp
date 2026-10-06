@@ -1,3 +1,4 @@
+import Content from "./content.index";
 import Header from "./header.index";
 import HeroSection from "./heroSection.index";
 
@@ -9,6 +10,7 @@ export const HomePage = () => {
                 <HeroSection />
             </div>
             <div className="surface-grid bg-transparent w-full h-110 absolute -top-px left-0 "></div>
+            <Content />
         </div>
     );
 };
