@@ -1,6 +1,6 @@
 import CustomButton from "../components/button";
 
-const HomeMainContentComp = () => {
+const HeroSection = () => {
     return (
         <div className="container mx-auto mt-8 md:mt-12">
             <div className="border rounded-3xl w-fit py-1 px-2.5 text-xs border-gray-1/30 text-gray-600 font-semibold bg-white mb-4 sm:mb-8">
@@ -31,4 +31,4 @@ const HomeMainContentComp = () => {
         </div>
     );
 };
-export default HomeMainContentComp;
+export default HeroSection;
