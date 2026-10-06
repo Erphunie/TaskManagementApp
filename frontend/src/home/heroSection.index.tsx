@@ -3,7 +3,7 @@ import CustomButton from "../components/button";
 const HeroSection = () => {
     return (
         <div className="container mx-auto mt-8 md:mt-12">
-            <div className="border rounded-3xl w-fit py-1 px-2.5 text-xs border-gray-1/30 text-gray-600 font-semibold bg-white mb-4 sm:mb-8">
+            <div className="border rounded-3xl w-fit py-1 px-2.5 text-xs border-border text-gray-600 font-semibold bg-white mb-4 sm:mb-8">
                 Build for one person: You
             </div>
             <h1 className="text-5xl font-semibold mb-4 max-w-125 sm:mb-7">
@@ -25,7 +25,7 @@ const HeroSection = () => {
                 />
                 <CustomButton
                     text="I already have an account"
-                    classname="px-8 bg-white border-gray-1/30! border shadow-md  w-full  min-[450px]:w-fit hover:bg-primary/30!"
+                    classname="px-8 bg-white border-border border shadow-md  w-full  min-[450px]:w-fit hover:bg-primary/30! hover:border-primary/30!"
                 />
             </div>
         </div>
