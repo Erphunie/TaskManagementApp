@@ -6,6 +6,7 @@
     --color-white-2: #f7fbfc;
     --color-black-1: #0b222d;
     --color-gray-1: #5b6c75;
+    --color-border: #d6e0e4;
 }
 
 @layer base {
@@ -27,8 +28,8 @@
 
     .surface-grid {
         background-image:
-            linear-gradient(to right, #d6e0e4 1px, transparent 1px),
-            linear-gradient(to bottom, #d6e0e4 1px, transparent 1px);
+            linear-gradient(to right, var(--color-border) 1px, transparent 1px),
+            linear-gradient(to bottom, var(--color-border) 1px, transparent 1px);
         background-size: 56px 56px;
         -webkit-mask-image: radial-gradient(80% 60% at 50% 0, #000, #0000 75%);
         mask-image: radial-gradient(80% 60% at 50% 0, #000, #0000 75%);
