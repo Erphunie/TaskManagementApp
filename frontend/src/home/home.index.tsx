@@ -4,7 +4,7 @@ import HeroSection from "./heroSection.index";
 
 export const HomePage = () => {
     return (
-        <div className="bg-white-2 relative">
+        <div className="bg-white-2 relative min-h-svh">
             <div className="relative z-10">
                 <Header />
                 <HeroSection />
