@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CustomButton from "../../components/button";
 
 const HeroSection = () => {
@@ -19,14 +20,18 @@ const HeroSection = () => {
                 see your tasks.
             </p>
             <div className="flex g-4 flex-col md:flex-row items-start gap-3 mt-8 md:gap-4 pb-5">
-                <CustomButton
-                    text="Create your board"
-                    classname="px-8 w-full  min-[450px]:w-fit shadow-md  border border-transparent"
-                />
-                <CustomButton
-                    text="I already have an account"
-                    classname="px-8 bg-white border-border border shadow-md  w-full  min-[450px]:w-fit hover:bg-primary/30! hover:border-primary/30!"
-                />
+                <Link to={"/auth?mode=sign-up"}>
+                    <CustomButton
+                        text="Create your board"
+                        className="px-8 w-full  min-[450px]:w-fit shadow-md  border border-transparent"
+                    />
+                </Link>
+                <Link to={"/auth?mode=sign-in"}>
+                    <CustomButton
+                        text="I already have an account"
+                        className="px-8 bg-white border-border border shadow-md  w-full  min-[450px]:w-fit hover:bg-primary/30! hover:border-primary/30!"
+                    />
+                </Link>
             </div>
         </div>
     );

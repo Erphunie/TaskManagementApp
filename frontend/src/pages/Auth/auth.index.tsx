@@ -1,10 +1,14 @@
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import Header from "../../components/header.index";
 import SignIn from "./signin/signin.index";
 import SignUp from "./signup/signup.index";
 
 const Auth = () => {
-    const [isLogin, setIsLogin] = useState(!false);
+    const [searchParams] = useSearchParams();
+    const [isLogin, setIsLogin] = useState(
+        searchParams.get("mode") == "sign-in" ? true : false,
+    );
     return (
         <div className="bg-white-2 relative min-h-svh">
             <div className="z-10 relative">
