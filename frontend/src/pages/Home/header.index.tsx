@@ -1,5 +1,5 @@
 import { CiLight } from "react-icons/ci";
-import CustomButton from "../components/button";
+import CustomButton from "../../components/button";
 
 const Header = () => {
     return (

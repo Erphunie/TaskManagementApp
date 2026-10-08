@@ -1,4 +1,4 @@
-import CustomButton from "../components/button";
+import CustomButton from "../../components/button";
 
 const HeroSection = () => {
     return (
