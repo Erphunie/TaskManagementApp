@@ -1,12 +1,16 @@
+import CustomButton from "../../components/button";
+import Header from "../../components/header.index";
 import Content from "./content.index";
-import Header from "./header.index";
+
 import HeroSection from "./heroSection.index";
 
 export const HomePage = () => {
     return (
         <div className="bg-white-2 relative min-h-svh">
             <div className="relative z-10">
-                <Header />
+                <Header>
+                    <CustomButton text="Get started" />
+                </Header>
                 <HeroSection />
             </div>
             <div className="surface-grid bg-transparent w-full h-110 absolute -top-px left-0 "></div>

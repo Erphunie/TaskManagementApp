@@ -1,10 +1,10 @@
+import type { ReactNode } from "react";
 import { CiLight } from "react-icons/ci";
-import CustomButton from "../../components/button";
 
-const Header = () => {
+const Header = ({ children }: { children?: ReactNode }) => {
     return (
         <div className="flex items-center justify-between py-5 container mx-auto">
-            <div className="text-primary text-xl font-bold">
+            <div className="text-primary text-xl font-bold mr-auto">
                 <span className="sm:hidden">TM</span>
                 <span className="hidden sm:block">Task Management</span>
             </div>
@@ -13,7 +13,7 @@ const Header = () => {
                     <CiLight size={20} />
                     {/* <CiDark size={20} /> */}
                 </div>
-                <CustomButton text="Get started" />
+                {children}
             </div>
         </div>
     );
