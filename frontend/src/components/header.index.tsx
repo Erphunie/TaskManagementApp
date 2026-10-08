@@ -1,13 +1,17 @@
 import type { ReactNode } from "react";
 import { CiLight } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
-const Header = ({ children }: { children?: ReactNode }) => {
+const Header = ({ children, link }: { children?: ReactNode; link: string }) => {
     return (
         <div className="flex items-center justify-between py-5 container mx-auto">
-            <div className="text-primary text-xl font-bold mr-auto">
+            <Link
+                to={link}
+                className="text-primary text-xl font-bold mr-auto cursor-pointer"
+            >
                 <span className="sm:hidden">TM</span>
                 <span className="hidden sm:block">Task Management</span>
-            </div>
+            </Link>
             <div className="flex items-center gap-5">
                 <div className="hover:bg-primary/40 duration-300 rounded-lg px-2 py-2 cursor-pointer">
                     <CiLight size={20} />

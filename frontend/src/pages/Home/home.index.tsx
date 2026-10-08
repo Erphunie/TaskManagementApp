@@ -9,7 +9,7 @@ export const HomePage = () => {
     return (
         <div className="bg-white-2 relative min-h-svh">
             <div className="relative z-10">
-                <Header>
+                <Header link="/">
                     <Link to={"/auth?mode=sign-up"}>
                         <CustomButton text="Get started" />
                     </Link>

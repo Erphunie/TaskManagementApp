@@ -12,7 +12,7 @@ const Auth = () => {
     return (
         <div className="bg-white-2 relative min-h-svh">
             <div className="z-10 relative">
-                <Header />
+                <Header link="/" />
                 <div className="flex items-center justify-center container mx-auto min-h-[calc(100svh-76px-40px)] mb-10">
                     <div className="border border-border rounded-lg bg-white p-6 px-8 shadow-2xl">
                         <h1 className="text-xl font-bold text-black-1">
