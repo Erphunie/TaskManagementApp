@@ -78,11 +78,9 @@ const SignUp = () => {
                     </p>
                 )}
             </div>
-            <CustomButton
-                type="submit"
-                text="Sign up"
-                className="pb-3 text-sm"
-            />
+            <CustomButton type="submit" className="pb-3 text-sm">
+                Sign up
+            </CustomButton>
         </form>
     );
 };

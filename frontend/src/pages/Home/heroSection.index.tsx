@@ -21,16 +21,14 @@ const HeroSection = () => {
             </p>
             <div className="flex g-4 flex-col md:flex-row items-start gap-3 mt-8 md:gap-4 pb-5">
                 <Link to={"/auth?mode=sign-up"}>
-                    <CustomButton
-                        text="Create your board"
-                        className="px-8 w-full  min-[450px]:w-fit shadow-md  border border-transparent"
-                    />
+                    <CustomButton className="px-8 w-full  min-[450px]:w-fit shadow-md  border border-transparent">
+                        Create your board
+                    </CustomButton>
                 </Link>
                 <Link to={"/auth?mode=sign-in"}>
-                    <CustomButton
-                        text="I already have an account"
-                        className="px-8 bg-white border-border border shadow-md  w-full  min-[450px]:w-fit hover:bg-primary/30! hover:border-primary/30!"
-                    />
+                    <CustomButton className="px-8 bg-white border-border border shadow-md  w-full  min-[450px]:w-fit hover:bg-primary/30! hover:border-primary/30!">
+                        I already have an account
+                    </CustomButton>
                 </Link>
             </div>
         </div>

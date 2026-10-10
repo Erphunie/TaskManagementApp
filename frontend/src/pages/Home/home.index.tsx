@@ -11,7 +11,7 @@ export const HomePage = () => {
             <div className="relative z-10">
                 <Header link="/">
                     <Link to={"/auth?mode=sign-up"}>
-                        <CustomButton text="Get started" />
+                        <CustomButton>Get started</CustomButton>
                     </Link>
                 </Header>
                 <HeroSection />

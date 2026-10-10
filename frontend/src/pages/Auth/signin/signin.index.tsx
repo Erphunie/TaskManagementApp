@@ -61,11 +61,9 @@ const SignIn = () => {
                     </p>
                 )}
             </div>
-            <CustomButton
-                type="submit"
-                text="Sign in"
-                className="pb-3 text-sm"
-            />
+            <CustomButton type="submit" className="pb-3 text-sm">
+                Sign in
+            </CustomButton>
         </form>
     );
 };
