@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { CiLight } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import BorderLessButton from "./borderLessButton";
 
 const Header = ({ children, link }: { children?: ReactNode; link: string }) => {
     return (
@@ -13,10 +14,10 @@ const Header = ({ children, link }: { children?: ReactNode; link: string }) => {
                 <span className="hidden sm:block">Task Management</span>
             </Link>
             <div className="flex items-center gap-5">
-                <div className="hover:bg-primary/40 duration-300 rounded-lg px-2 py-2 cursor-pointer">
+                <BorderLessButton>
                     <CiLight size={20} />
                     {/* <CiDark size={20} /> */}
-                </div>
+                </BorderLessButton>
                 {children}
             </div>
         </div>
