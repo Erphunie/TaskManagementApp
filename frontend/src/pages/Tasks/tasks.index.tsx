@@ -69,7 +69,7 @@ const TasksPage = () => {
                 <div className="mt-8 border border-border rounded-lg shadow-xl bg-white p-4 flex flex-col gap-2 md:flex-row justify-between md:items-center">
                     <div className="flex gap-2 items-center">
                         <h2 className="text-lg font-semibold">Title</h2>
-                        <div className="rounded-4xl bg-white-1 py-1 px-2 border border-border text-xs flex items-center justify-center text-gray-1 mt-1">
+                        <div className="rounded-4xl bg-white-1 py-1 px-2 border border-border text-xs flex items-center justify-center  mt-1 text-black-1">
                             TO DO
                         </div>
                         <div className="border border-border py-1 px-2 bg-white rounded-4xl text-xs mt-1">
@@ -83,7 +83,7 @@ const TasksPage = () => {
                             extraClassName="w-full"
                         />
                         <BorderLessButton>
-                            <MdDeleteOutline size={20} color="red"/>
+                            <MdDeleteOutline size={20} color="red" />
                         </BorderLessButton>
                     </div>
                 </div>
