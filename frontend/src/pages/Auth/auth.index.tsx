@@ -4,7 +4,7 @@ import Header from "../../components/header.index";
 import SignIn from "./signin/signin.index";
 import SignUp from "./signup/signup.index";
 
-const Auth = () => {
+const AuthPage = () => {
     const [searchParams] = useSearchParams();
     const [isLogin, setIsLogin] = useState(
         searchParams.get("mode") == "sign-in" ? true : false,
@@ -51,4 +51,4 @@ const Auth = () => {
         </div>
     );
 };
-export default Auth;
+export default AuthPage;
