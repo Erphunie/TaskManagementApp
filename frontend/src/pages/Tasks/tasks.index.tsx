@@ -18,7 +18,7 @@ const TasksPage = () => {
                     </BorderLessButton>
                 </Header>
             </div>
-            <div className="container mx-auto mt-12">
+            <div className="container mx-auto mt-12 pb-15">
                 <div className="flex flex-col gap-6 md:flex-row">
                     <div className="flex-1">
                         <h1 className="text-3xl font-semibold text-black-2">
