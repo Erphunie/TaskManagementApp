@@ -1,11 +1,11 @@
 import { CiLogout } from "react-icons/ci";
 import { FiSearch } from "react-icons/fi";
-import { MdDeleteOutline } from "react-icons/md";
 import BorderLessButton from "../../components/borderLessButton";
 import CustomButton from "../../components/button";
 import Dropdown from "../../components/dropdown";
 import Header from "../../components/header.index";
 import NoticeBox from "../../components/noticeBox";
+import Task from "../../components/task";
 
 const TasksPage = () => {
     return (
@@ -67,28 +67,9 @@ const TasksPage = () => {
                         />
                     </div>
                 </div>
-                <div className="mt-8 border border-border rounded-lg shadow-xl bg-bgBox p-4 flex flex-col gap-2 md:flex-row justify-between md:items-center">
-                    <div className="flex gap-2 items-center">
-                        <h2 className="text-lg font-semibold text-black-2">
-                            Title
-                        </h2>
-                        <div className="rounded-4xl py-1 px-2 border border-border text-xs flex items-center justify-center  mt-1 text-gray-1 bg-[#e0eaee] dark:bg-[#28353b]">
-                            TO DO
-                        </div>
-                        <div className="border border-border py-1 px-2 bg-white-2 rounded-4xl text-xs mt-1">
-                            Medium
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <Dropdown
-                            onChange={() => {}}
-                            options={["To do", "In progress", "Done"]}
-                            extraClassName="w-full"
-                        />
-                        <BorderLessButton>
-                            <MdDeleteOutline size={20} color="red" />
-                        </BorderLessButton>
-                    </div>
+                <div className="mt-8 flex flex-col gap-4">
+                    <Task />
+                    <Task />
                 </div>
                 <NoticeBox
                     title="No tasks yet."
