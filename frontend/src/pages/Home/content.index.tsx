@@ -5,7 +5,7 @@ const Content = () => {
     return (
         <div className="container mx-auto">
             <div className="flex flex-col gap-4 pb-20 pt-15 md:flex-row flex-wrap">
-                <div className="border bg-white rounded-lg p-4 flex flex-col border-border md:w-[calc(50%-8px)] lg:w-[calc(100%/3-32px/3)]">
+                <div className="border bg-bgBox text-black-2 rounded-lg p-4 flex flex-col border-border md:w-[calc(50%-8px)] lg:w-[calc(100%/3-32px/3)]">
                     <div className="rounded-xl bg-primary/30 w-fit p-2 mb-3">
                         <IoIosMove size={20} />
                     </div>
@@ -15,7 +15,7 @@ const Content = () => {
                         single click.
                     </p>
                 </div>
-                <div className="border bg-white rounded-lg p-4 flex flex-col border-border md:w-[calc(50%-8px)] lg:w-[calc(100%/3-32px/3)]">
+                <div className="border bg-bgBox text-black-2 rounded-lg p-4 flex flex-col border-border md:w-[calc(50%-8px)] lg:w-[calc(100%/3-32px/3)]">
                     <div className="rounded-xl bg-primary/30 w-fit p-2 mb-3">
                         <IoFilter size={20} />
                     </div>
@@ -25,7 +25,7 @@ const Content = () => {
                         stays in view.
                     </p>
                 </div>
-                <div className="border bg-white rounded-lg p-4 flex flex-col border-border md:w-[calc(50%-8px)] lg:w-[calc(100%/3-32px/3)]">
+                <div className="border bg-bgBox text-black-2 rounded-lg p-4 flex flex-col border-border md:w-[calc(50%-8px)] lg:w-[calc(100%/3-32px/3)]">
                     <div className="rounded-xl bg-primary/30 w-fit p-2 mb-3">
                         <IoIosSearch size={20} />
                     </div>

@@ -1,6 +1,7 @@
-import type { ReactNode } from "react";
-import { CiLight } from "react-icons/ci";
+import { type ReactNode } from "react";
+import { CiDark, CiLight } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { useTheme } from "../context/theme.context";
 import BorderLessButton from "./borderLessButton";
 
 const Header = ({ children, link }: { children?: ReactNode; link: string }) => {
@@ -14,13 +15,19 @@ const Header = ({ children, link }: { children?: ReactNode; link: string }) => {
                 <span className="hidden sm:block">Task Management</span>
             </Link>
             <div className="flex items-center gap-5">
-                <BorderLessButton>
-                    <CiLight size={20} />
-                    {/* <CiDark size={20} /> */}
-                </BorderLessButton>
+                <ThemeButton />
                 {children}
             </div>
         </div>
     );
 };
 export default Header;
+
+const ThemeButton = () => {
+    const { tValue, changer } = useTheme();
+    return (
+        <BorderLessButton onClick={changer}>
+            {tValue === "DARK" ? <CiLight size={20} /> : <CiDark size={20} />}
+        </BorderLessButton>
+    );
+};

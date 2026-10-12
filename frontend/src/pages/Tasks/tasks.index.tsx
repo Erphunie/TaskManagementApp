@@ -5,6 +5,7 @@ import BorderLessButton from "../../components/borderLessButton";
 import CustomButton from "../../components/button";
 import Dropdown from "../../components/dropdown";
 import Header from "../../components/header.index";
+import NoticeBox from "../../components/noticeBox";
 
 const TasksPage = () => {
     return (
@@ -20,7 +21,7 @@ const TasksPage = () => {
             <div className="container mx-auto mt-12">
                 <div className="flex flex-col gap-6 md:flex-row">
                     <div className="flex-1">
-                        <h1 className="text-3xl font-semibold">
+                        <h1 className="text-3xl font-semibold text-black-2">
                             Dashboard title
                         </h1>
                         <div className="text-sm text-gray-1">
@@ -31,7 +32,7 @@ const TasksPage = () => {
                         + New task
                     </CustomButton>
                 </div>
-                <div className="mt-8 border border-border bg-white rounded-lg p-2.5 shadow-xl/5 flex flex-col lg:flex-row gap-2 lg:items-center">
+                <div className="mt-8 border border-border  rounded-lg p-2.5 shadow-xl/5 flex flex-col lg:flex-row gap-2 lg:items-center bg-bgBox">
                     <div className="border border-border rounded-lg md:flex-1 flex items-center px-2 gap-2">
                         <FiSearch size={20} className="text-gray-1" />
                         <input
@@ -66,13 +67,15 @@ const TasksPage = () => {
                         />
                     </div>
                 </div>
-                <div className="mt-8 border border-border rounded-lg shadow-xl bg-white p-4 flex flex-col gap-2 md:flex-row justify-between md:items-center">
+                <div className="mt-8 border border-border rounded-lg shadow-xl bg-bgBox p-4 flex flex-col gap-2 md:flex-row justify-between md:items-center">
                     <div className="flex gap-2 items-center">
-                        <h2 className="text-lg font-semibold">Title</h2>
-                        <div className="rounded-4xl bg-white-1 py-1 px-2 border border-border text-xs flex items-center justify-center  mt-1 text-black-1">
+                        <h2 className="text-lg font-semibold text-black-2">
+                            Title
+                        </h2>
+                        <div className="rounded-4xl py-1 px-2 border border-border text-xs flex items-center justify-center  mt-1 text-gray-1 bg-[#e0eaee] dark:bg-[#28353b]">
                             TO DO
                         </div>
-                        <div className="border border-border py-1 px-2 bg-white rounded-4xl text-xs mt-1">
+                        <div className="border border-border py-1 px-2 bg-white-2 rounded-4xl text-xs mt-1">
                             Medium
                         </div>
                     </div>
@@ -87,14 +90,14 @@ const TasksPage = () => {
                         </BorderLessButton>
                     </div>
                 </div>
-                {/* <NoticeBox
+                <NoticeBox
                     title="No tasks yet."
                     desc="Add your first task to get the board rolling."
                 />
                 <NoticeBox
                     title="Nothing matches those filters."
                     desc="Try a different status, priority or search term.."
-                /> */}
+                />
             </div>
         </div>
     );

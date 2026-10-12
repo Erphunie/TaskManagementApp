@@ -5,8 +5,21 @@
     --color-white-1: #f0f4f8;
     --color-white-2: #f7fbfc;
     --color-black-1: #0b222d;
+    --color-black-2: #010f18;
     --color-gray-1: #5b6c75;
     --color-border: #d6e0e4;
+    --color-bgBox: #ffffff;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.dark {
+    --color-white-2: #05161d;
+    --color-border: #253941;
+    --color-gray-1: #90a2a8;
+    --color-black-2: #f3ecee;
+    --color-primary: #37b6d4;
+    --color-bgBox: #0c212a;
 }
 
 @layer base {

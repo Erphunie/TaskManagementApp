@@ -4,10 +4,10 @@ import CustomButton from "../../components/button";
 const HeroSection = () => {
     return (
         <div className="container mx-auto mt-8 md:mt-12">
-            <div className="border rounded-3xl w-fit py-1 px-2.5 text-xs border-border text-gray-600 font-semibold bg-white mb-4 sm:mb-8">
+            <div className="border rounded-3xl w-fit py-1 px-2.5 text-xs border-border text-gray-1 font-semibold bg-bgBox mb-4 sm:mb-8">
                 Build for one person: You
             </div>
-            <h1 className="text-5xl font-semibold mb-4 max-w-125 sm:mb-7">
+            <h1 className="text-5xl font-semibold mb-4 max-w-125 sm:mb-7 text-black-2">
                 A task board that stays
                 <span className="w-fit highlight-text pb-2">
                     {" "}
@@ -26,7 +26,7 @@ const HeroSection = () => {
                     </CustomButton>
                 </Link>
                 <Link to={"/auth?mode=sign-in"}>
-                    <CustomButton className="px-8 bg-white border-border border shadow-md  w-full  min-[450px]:w-fit hover:bg-primary/30! hover:border-primary/30!">
+                    <CustomButton className="px-8 bg-white-2 text-black-2 border-border border shadow-md  w-full  min-[450px]:w-fit hover:bg-primary/30! hover:border-primary/30!">
                         I already have an account
                     </CustomButton>
                 </Link>
