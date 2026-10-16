@@ -13,7 +13,7 @@ import (
 
 func main() {
 	var port = 8080
-	flag.IntVar(&port, "port", 8080, "Server app port.")
+	flag.IntVar(&port, "port", port, "Server app port.")
 	flag.Parse()
 
 	application, err := app.New()
