@@ -32,7 +32,7 @@ func main() {
 		Handler:      handler,
 	}
 
-	fmt.Printf("\nServer in up on port: %d\n", port)
+	fmt.Printf("\nServer is up on port: %d\n", port)
 
 	if err = server.ListenAndServe(); err != nil {
 		log.Fatal(err)
